@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/jquery.vide.js"></script>
+    <script type="text/javascript" src="js/cloud-zoom.1.0.2.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAELxnWXbqd1zRYSrGmY8WoRgk938pr5Rg"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+  </head>
+  <body>
+    <div class="header"><img src="img/logo.png" alt="" class="logo">
+      <div class="wrapper">
+        <nav class="menu">
+          <div class="menu__left">
+            <div class="menu__item"><a href="#sets" class="menu__item-link">Готовые наборы</a></div>
+            <div class="menu__item"><a href="#locomotives" class="menu__item-link">Подарочные локомотивы</a></div>
+          </div>
+          <div class="menu__right">
+            <div class="menu__item"><a href="#history" class="menu__item-link">История</a></div>
+            <div class="menu__item"><a href="#studio" class="menu__item-link">О студии</a></div>
+            <div class="menu__item"><a href="#contacts" class="menu__item-link">Контакты</a></div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="banner__item-container">
+        <div data-vide-bg class="banner__item-video"></div>
+        <div class="banner__item banner__item--masters">
+          <div class="banner__item-author">Студия Николая Кузнецова</div>
+          <h1 class="banner__item-header">Миниатюрные железные дороги от <br>самых преданных мастеров своего дела</h1><a href="#sets" class="btn btn--colored banner__btn">Перейти в каталог</a>
+        </div>
+      </div>
+      <div class="banner__item-container">
+        <div class="banner__item banner__item--studio">
+          <h1 class="banner__item-header">Студия Николая Кузнецова</h1>
+          <div class="banner__item-author">Железные дороги в миниатюре</div><a href="#sets" class="btn btn--colored banner__btn">Перейти в каталог</a>
+        </div>
+      </div>
+      <div class="banner__item-container">
+        <div class="banner__item banner__item--dream">
+          <div class="banner__item-slogan"></div>
+          <div class="banner__item-author">Студия Николая Кузнецова</div><a href="#sets" class="btn btn--colored banner__btn">Выбрать мечту</a>
+        </div>
+      </div>
+      <div class="banner__item-container">
+        <div class="banner__item banner__item--intellect">
+          <div class="banner__item-proof"></div>
+          <h1 class="banner__item-header">Инструмент развития интеллекта <br>у вашего ребёнка</h1><a href="#" class="banner__item-statement">Заключение</a>
+          <div class="banner__item-author banner__item-author--straight">Студия Николая Кузнецова</div><a href="#sets" class="btn btn--colored banner__btn">Перейти к наборам</a>
+        </div>
+      </div>
+      <div class="banner__item-container">
+        <div class="banner__item banner__item--gift">
+          <h1 class="banner__item-header">Самый впечатляющий <br>подарок вашему ребенку</h1>
+          <div class="banner__item-author banner__item-author--straight">Студия Николая Кузнецова</div><a href="#sets" class="btn btn--colored banner__btn">Перейти к наборам</a>
+        </div>
+      </div>
+    </div>
+    <div id="sets" class="sets-section">
+      <div class="wrapper">
+        <h2 class="section-header section-header--black section-header--center sets-section__header">Готовые наборы</h2>
+        <ul class="sets-section__list">
+            <li class="set">
+              <div class="set__left">
+                <h3 class="set__header">Макет «Подарочный»</h3>
+                <div class="set-info">
+                  <ul class="set-info__numbers">
+                    <li class="set-info__numbers-item">
+                      <div class="set-info__numbers-item-header">Размер:</div>
+                      <div class="set-info__numbers-item-content">140x100x80 см</div>
+                    </li>
+                    <li class="set-info__numbers-item">
+                      <div class="set-info__numbers-item-header">Производство:</div>
+                      <div class="set-info__numbers-item-content">4-6 дней</div>
+                    </li>
+                    <li class="set-info__numbers-item">
+                      <div class="set-info__numbers-item-header">Срок службы:</div>
+                      <div class="set-info__numbers-item-content">10 лет</div>
+                    </li>
+                  </ul>
+                  <ul class="set-info__features">
+                    <li class="set-info__features-item">Безопасен для ребенка</li>
+                    <li class="set-info__features-item">Развивает моторику у ребенка</li>
+                    <li class="set-info__features-item">Немецкое качество</li>
+                  </ul>
+                </div>
+                <div class="set__bottom"><a href="#item-1" class="btn btn--colored set__button fancybox">Подробнее</a>
+                  <div class="set__price">60 000 руб.</div>
+                </div>
+              </div>
+              <div class="set__right"><img src="img/set-1.jpg" alt="Макет «Подарочный»" class="set__picture">
+                <div class="set__quote">
+                  <div class="set__quote-content">Ваш ребенок запомнит этот день на всю жизнь</div>
+                  <div class="set__quote-author">Н. Кузнецов</div>
+                </div>
+              </div>
+            </li>
+            <li class="set">
+              <div class="set__left">
+                <h3 class="set__header">Макет «Мечта детства»</h3>
+                <div class="set-info">
+                  <ul class="set-info__numbers">
+                    <li class="set-info__numbers-item">
+                      <div class="set-info__numbers-item-header">Размер:</div>
+                      <div class="set-info__numbers-item-content">160x100x80 см</div>
+                    </li>
+                    <li class="set-info__numbers-item">
+                      <div class="set-info__numbers-item-header">Производство:</div>
+                      <div class="set-info__numbers-item-content">6-7 дней</div>
+                    </li>
+                    <li class="set-info__numbers-item">
+                      <div class="set-info__numbers-item-header">Срок службы:</div>
+                      <div class="set-info__numbers-item-content">10 лет</div>
+                    </li>
+                  </ul>
+                  <ul class="set-info__features">
+                    <li class="set-info__features-item">Безопасен для ребенка</li>
+                    <li class="set-info__features-item">Развивает моторику у ребенка</li>
+                    <li class="set-info__features-item">Австрийское качество</li>
+                  </ul>
+                </div>
+                <div class="set__bottom"><a href="#item-2" class="btn btn--colored set__button fancybox">Подробнее</a>
+                  <div class="set__price">95 000 руб.</div>
+                </div>
+              </div>
+              <div class="set__right"><img src="img/set-2.jpg" alt="Макет «Мечта детства»" class="set__picture">
+                <div class="set__quote">
+                  <div class="set__quote-content">Ваша мечта сбывается!</div>
+                  <div class="set__quote-author">Н. Кузнецов</div>
+                </div>
+              </div>
+            </li>
+          <li class="set">
+            <div class="set__left">
+              <h3 class="set__header">Макет «Детский интеллект»</h3>
+              <div class="set-info">
+                <ul class="set-info__numbers">
+                  <li class="set-info__numbers-item">
+                    <div class="set-info__numbers-item-header">Размер:</div>
+                    <div class="set-info__numbers-item-content">160x100x80 см</div>
+                  </li>
+                  <li class="set-info__numbers-item">
+                    <div class="set-info__numbers-item-header">Производство:</div>
+                    <div class="set-info__numbers-item-content">6-7 дней</div>
+                  </li>
+                  <li class="set-info__numbers-item">
+                    <div class="set-info__numbers-item-header">Срок службы:</div>
+                    <div class="set-info__numbers-item-content">10 лет</div>
+                  </li>
+                </ul>
+                <ul class="set-info__features">
+                  <li class="set-info__features-item">Безопасен для ребенка</li>
+                  <li class="set-info__features-item">Развивает моторику у ребенка</li>
+                  <li class="set-info__features-item">Чешское качество</li>
+                </ul>
+              </div>
+              <div class="set__bottom"><a href="#item-3" class="btn btn--colored set__button fancybox">Подробнее</a>
+                <div class="set__price">130 000 руб.</div>
+              </div>
+            </div>
+            <div class="set__right"><img src="img/set-3.jpg" alt="Макет «Детский интеллект»" class="set__picture">
+              <div class="set__quote"><a href="#" class="set__intellect-link">Заключение психологов</a>
+                <div class="set__quote-content">Развивает интеллект у ребенка</div>
+                <div class="set__quote-author">Н. Кузнецов</div>
+              </div>
+            </div>
+          </li>
+            <li class="set">
+              <div class="set__left">
+                <h3 class="set__header">Макет «Желанный»</h3>
+                <div class="set-info">
+                  <ul class="set-info__numbers">
+                    <li class="set-info__numbers-item">
+                      <div class="set-info__numbers-item-header">Размер:</div>
+                      <div class="set-info__numbers-item-content">160x100x80 см</div>
+                    </li>
+                    <li class="set-info__numbers-item">
+                      <div class="set-info__numbers-item-header">Производство:</div>
+                      <div class="set-info__numbers-item-content">6-7 дней</div>
+                    </li>
+                    <li class="set-info__numbers-item">
+                      <div class="set-info__numbers-item-header">Срок службы:</div>
+                      <div class="set-info__numbers-item-content">10 лет</div>
+                    </li>
+                  </ul>
+                  <ul class="set-info__features">
+                    <li class="set-info__features-item">Безопасен для ребенка</li>
+                    <li class="set-info__features-item">Развивает моторику у ребенка</li>
+                    <li class="set-info__features-item">Немецкое качество</li>
+                  </ul>
+                </div>
+                <div class="set__bottom"><a href="#item-4" class="btn btn--colored set__button fancybox">Подробнее</a>
+                  <div class="set__price">190 000 руб.</div>
+                </div>
+              </div>
+              <div class="set__right"><img src="img/set-4.jpg" alt="Макет «Желанный»" class="set__picture">
+                <div class="set__quote">
+                  <div class="set__quote-content">Никогда не надоедает, работает как машина</div>
+                  <div class="set__quote-author">Н. Кузнецов</div>
+                </div>
+              </div>
+            </li>
+            <li class="set">
+              <div class="set__left">
+                <h3 class="set__header">Макет «Босс»</h3>
+                <div class="set-info">
+                  <ul class="set-info__numbers">
+                    <li class="set-info__numbers-item">
+                      <div class="set-info__numbers-item-header">Размер:</div>
+                      <div class="set-info__numbers-item-content">160x100x80 см</div>
+                    </li>
+                    <li class="set-info__numbers-item">
+                      <div class="set-info__numbers-item-header">Производство:</div>
+                      <div class="set-info__numbers-item-content">6-7 дней</div>
+                    </li>
+                    <li class="set-info__numbers-item">
+                      <div class="set-info__numbers-item-header">Срок службы:</div>
+                      <div class="set-info__numbers-item-content">10 лет</div>
+                    </li>
+                  </ul>
+                  <ul class="set-info__features">
+                    <li class="set-info__features-item">Безопасен для ребенка</li>
+                    <li class="set-info__features-item">Развивает моторику у ребенка</li>
+                    <li class="set-info__features-item">Немецкое качество</li>
+                  </ul>
+                </div>
+                <div class="set__bottom"><a href="#item-5" class="btn btn--colored set__button fancybox">Подробнее</a>
+                  <div class="set__price">60 000 руб.</div>
+                </div>
+              </div>
+              <div class="set__right"><img src="img/set-5.jpg" alt="Макет «Босс»" class="set__picture">
+                <div class="set__quote">
+                  <div class="set__quote-content">Предназначен для хозяина жизни!</div>
+                  <div class="set__quote-author">Н. Кузнецов</div>
+                </div>
+              </div>
+            </li>
+            <li class="set">
+              <div class="set__left">
+                <h3 class="set__header">Макет «Счастливый»</h3>
+                <div class="set-info">
+                  <ul class="set-info__numbers">
+                    <li class="set-info__numbers-item">
+                      <div class="set-info__numbers-item-header">Размер:</div>
+                      <div class="set-info__numbers-item-content">160x100x80 см</div>
+                    </li>
+                    <li class="set-info__numbers-item">
+                      <div class="set-info__numbers-item-header">Производство:</div>
+                      <div class="set-info__numbers-item-content">6-7 дней</div>
+                    </li>
+                    <li class="set-info__numbers-item">
+                      <div class="set-info__numbers-item-header">Срок службы:</div>
+                      <div class="set-info__numbers-item-content">10 лет</div>
+                    </li>
+                  </ul>
+                  <ul class="set-info__features">
+                    <li class="set-info__features-item">Безопасен для ребенка</li>
+                    <li class="set-info__features-item">Развивает моторику у ребенка</li>
+                    <li class="set-info__features-item">Австрийское качество</li>
+                  </ul>
+                </div>
+                <div class="set__bottom"><a href="#item-6" class="btn btn--colored set__button fancybox">Подробнее</a>
+                  <div class="set__price">290 000 руб.</div>
+                </div>
+              </div>
+              <div class="set__right"><img src="img/set-6.jpg" alt="Макет «Счастливый»" class="set__picture">
+                <div class="set__quote">
+                  <div class="set__quote-content">Счастье всей вашей семьи гарантированно</div>
+                  <div class="set__quote-author">Н. Кузнецов</div>
+                </div>
+              </div>
+            </li>
+        </ul>
+      </div>
+    </div>
+    <div class="individual">
+      <div class="wrapper"><img src="img/logo-brown.png" alt="Mr. Tutu" class="individual__logo">
+        <h2 class="section-header section-header--white section-header--left">Индивидуальные макеты</h2>
+        <ul class="individual__reasons">
+          <li class="individual__reasons-item">Необходимо вписать в интерьер</li>
+          <li class="individual__reasons-item">Мечтаете о гудке, как у настоящего паровоза</li>
+          <li class="individual__reasons-item">Нужен очень большой макет</li>
+          <li class="individual__reasons-item">Желаете самое оригинальное решение</li>
+          <li class="individual__reasons-item">Желаете много пара</li>
+          <li class="individual__reasons-item">Желаете менее компактный</li>
+        </ul>
+        <div class="individual__btns"><a id="portfolio-btn" href="#portfolio" class="btn btn--transparent individual__btn fancybox">Портфолио работ</a><a href="#advice" class="btn btn--colored individual__btn fancybox">Заказать консультацию</a></div>
+      </div>
+    </div>
+    <div id="locomotives" class="locomotives">
+      <div class="wrapper">
+        <h2 class="section-header section-header--black section-header--left">Подарочные локомотивы</h2>
+        <ul class="locomotives__list">
+          <li class="locomotives__item"><img src="img/locomotive-1.jpg" alt=" Локомотив «РЖД»" class="locomotives__item-picture">
+            <div class="locomotives__item-info">
+              <p class="locomotives__item-name">Модель «РЖД»</p>
+              <p class="locomotives__item-price">25 500 руб.</p><a href="#order" class="btn btn--colored locomotives__btn fancybox">Купить</a>
+            </div>
+          </li>
+          <li class="locomotives__item"><img src="img/locomotive-2.jpg" alt="Модель «Электровоз»" class="locomotives__item-picture">
+            <div class="locomotives__item-info">
+              <p class="locomotives__item-name">Модель «Электровоз»</p>
+              <p class="locomotives__item-price">36 000 руб.</p><a href="#order" class="btn btn--colored locomotives__btn fancybox">Купить</a>
+            </div>
+          </li>
+          <li class="locomotives__item"><img src="img/locomotive-3.jpg" alt="Модель «Кран»" class="locomotives__item-picture">
+            <div class="locomotives__item-info">
+              <p class="locomotives__item-name">Модель «Кран»</p>
+              <p class="locomotives__item-price">37 000 руб.</p><a href="#order" class="btn btn--colored locomotives__btn fancybox">Купить</a>
+            </div>
+          </li>
+          <li class="locomotives__item"><img src="img/locomotive-1.jpg" alt=" Локомотив «РЖД»" class="locomotives__item-picture">
+            <div class="locomotives__item-info">
+              <p class="locomotives__item-name">Модель «РЖД»</p>
+              <p class="locomotives__item-price">25 500 руб.</p><a href="#order" class="btn btn--colored locomotives__btn fancybox">Купить</a>
+            </div>
+          </li>
+          <li class="locomotives__item"><img src="img/locomotive-2.jpg" alt="Модель «Электровоз»" class="locomotives__item-picture">
+            <div class="locomotives__item-info">
+              <p class="locomotives__item-name">Модель «Электровоз»</p>
+              <p class="locomotives__item-price">36 000 руб.</p><a href="#order" class="btn btn--colored locomotives__btn fancybox">Купить</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="history" class="history">
+      <div class="wrapper">
+        <h2 class="section-header section-header--white section-header--left">История студии</h2>
+        <div class="history__content">
+          <div class="history__content-left">
+            <p class="history__text">В детсве я ездил на поезде каждый год. В Лениногорск, где живут мои бабушка с дедушкой. <br><br>Я обожал любоваться пейцажем из окна! Особый восторг вызывала возможность опустить окно плацкарта и полностью высунуть голову из вагона...</p><a href="#story" class="btn btn--transparent history__btn fancybox">Читать далее</a>
+          </div>
+          <div class="history__ceo-photo"></div>
+          <div class="history__ceo-dscr">
+            <div class="history__ceo-name">Николай Кузнецов</div>
+            <div class="history__ceo-position">Генеральный директор</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="studio" class="about">
+      <div class="wrapper">
+        <h2 class="section-header section-header--black section-header--left">Несколько слов о нас</h2>
+        <p class="about__text">Вы всегда можете заглянуть в наш шоурум вместе с будущими обладателями игрушки, в любое удобное для вас время, чтобы не только увидеть все своими глазами, но и опробовать железную дорогу в действии, приняв участие в увлекательной игре!</p>
+        <div class="testdrive">
+          <ul class="testdrive__features">
+            <li class="testdrive__features-item">Поуправляйте железной дорогой самостоятельно</li>
+            <li class="testdrive__features-item">Оцените безопасность железных дорог</li>
+            <li class="testdrive__features-item">Познакомтесь с генеральным директором</li>
+            <li class="testdrive__features-item">Выпейте чашечку чая или кофе</li>
+            <li class="testdrive__features-item">Посмотрие столкновение и переворачивание поездов</li>
+            <li class="testdrive__features-item">Купите железную дорогу</li>
+          </ul>
+          <div class="testdrive__bottom"><a href="#testdrive" class="btn btn--colored fancybox">Записаться на тестдрайв</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="wrapper">
+        <h2 class="section-header section-header--white section-header--left">Часто задаваемые вопросы</h2>
+        <ul class="faq__list">
+          <li class="faq__item">
+            <h3 class="faq__item-header">Монтаж</h3>
+            <p class="faq__item-content">Монтаж производится в кратчайшие сроки к установленной вами датой точно в срок</p>
+          </li>
+          <li class="faq__item">
+            <h3 class="faq__item-header">Доставка</h3>
+            <p class="faq__item-content">Доставка осуществляется по Москве, и транспортными компаниями по территории РФ и СНГ</p>
+          </li>
+          <li class="faq__item">
+            <h3 class="faq__item-header">Гарантия</h3>
+            <p class="faq__item-content">На всю нашу продукцию дается гарантия сроком на 3 года с техническим обслуживание</p>
+          </li>
+          <li class="faq__item">
+            <h3 class="faq__item-header">Оплата</h3>
+            <p class="faq__item-content">Мы принимаем к оплате банковские карты и наличные деньги в нашем шоуруме</p>
+          </li>
+          <li class="faq__item">
+            <h3 class="faq__item-header">Сервис и ремонт</h3>
+            <p class="faq__item-content">Мы готовы предложить техническое обслуживание  для вашей железной дороги с ремонтов всех неисправных частей</p>
+          </li>
+          <li class="faq__item">
+            <h3 class="faq__item-header">Модернизация</h3>
+            <p class="faq__item-content">Поезда, вагоня, озеленение, фигурки — каждый раз вы сможете радовать своего ребенка новыи маленькими сюрпризами</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="contacts" class="contacts">
+      <div class="wrapper">
+        <div class="contacts__content">
+          <h2 class="section-header section-header--black section-header--left section-header--no-border">Контакты</h2>
+          <p class="contacts__text">Мы всегда будем рады встретить вас в нашем шоуруме!</p>
+          <p class="contacts__address">г. Москва, Большая полянка 51 а/9, офис 532</p>
+          <div class="contacts__info">
+            <div class="contacts__info-item contacts__info-item--phone">8 (499) 501-15-38</div><a href="#" class="contacts__info-item contacts__info-item--email">sale@mrtutu.ru</a>
+          </div>
+        </div>
+      </div>
+      <div class="contacts__map">
+        <div id="map" class="map"></div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="wrapper footer__wrapper">
+        <div class="footer__left">
+          <p class="footer__copyright">© 2012—2016 «Mr. TUTU»</p>
+          <p class="footer__dscr">Коллектив специалистов железнодорожного макетирования</p>
+        </div>
+        <div class="footer__center"><a href="#tibet" class="btn btn--transparent footer__btn fancybox">Тибетский взгляд на воспитание детей</a><a href="#" class="creator"><img src="img/creator-logo.png" alt="" class="creator__logo">
+            <div class="creator__link">Создание сайта</div></a></div>
+        <div class="footer__right">
+          <div class="subscribe">
+            <div class="subscribe__header">Подписаться на новые работы</div>
+            <form action="subscribe.php" method="POST" class="subscribe__form"><a href="#subscribe-success" class="subscribe__hidden-link fancybox"></a>
+              <input type="text" placeholder="Ваш e-mail" name="email" class="subscribe__input">
+              <button class="subscribe__btn"></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+      <div id="item-1" class="modal item">
+        <div class="modal__container">
+          <div class="item__top">
+            <h2 class="section-header section-header--black section-header--left">Макет «Подарочный»</h2>
+            <div class="item__gallery"><a id="zoom1" href="/img/item-1-big.jpg" rel="adjustX: 0, adjustY: 0, zoomWidth: 340, zoomHeight: 340" class="item__gallery-main cloud-zoom"><img src="/img/item-1-big.jpg" alt="Railroad" class="item__gallery-main-picture"></a>
+              <div class="item__gallery-thumbnails-container"><a href="/img/set-1.jpg" rel="useZoom: 'zoom1', smallImage: 'img/set-1.jpg'" class="item__gallery-thumbnail item__gallery-thumbnail--active cloud-zoom-gallery"><img src="/img/item-1-small.jpg" alt="Railroad" align="left" class="item__gallery-thumbnail-picture"></a><a href="/img/set-2.jpg" rel="useZoom: 'zoom1', smallImage: 'img/set-2.jpg'" class="item__gallery-thumbnail cloud-zoom-gallery"><img src="/img/item-2-small.jpg" alt="Railroad" class="item__gallery-thumbnail-picture"></a><a href="/img/set-3.jpg" rel="useZoom: 'zoom1', smallImage: 'img/set-3.jpg'" class="item__gallery-thumbnail cloud-zoom-gallery"><img src="/img/item-3-small.jpg" alt="Railroad" class="item__gallery-thumbnail-picture"></a><a href="/img/set-4.jpg" rel="useZoom: 'zoom1', smallImage: 'img/set-4.jpg'" class="item__gallery-thumbnail cloud-zoom-gallery"><img src="/img/item-4-small.jpg" alt="Railroad" class="item__gallery-thumbnail-picture"></a></div>
+            </div>
+            <div class="item__dscr">Интересный железнодорожный путь пролегает черех холмистый пейзаж с множеством достопримечательностей: cредневековый город с церковью, гора с замком, ручей с озером, старая крипичная железнодорожная станция с товарным складом в тупике, тоннель и длинный изогнутый мост.</div>
+          </div>
+          <div class="item__bottom">
+            <div class="set-info set-info--modal">
+              <ul class="set-info__numbers">
+                <li class="set-info__numbers-item">
+                  <div class="set-info__numbers-item-header">Размер:</div>
+                  <div class="set-info__numbers-item-content">140x100x80</div>
+                </li>
+                <li class="set-info__numbers-item">
+                  <div class="set-info__numbers-item-header">Производство:</div>
+                  <div class="set-info__numbers-item-content">4-6 дней</div>
+                </li>
+                <li class="set-info__numbers-item">
+                  <div class="set-info__numbers-item-header">Срок службы:</div>
+                  <div class="set-info__numbers-item-content">10 лет</div>
+                </li>
+              </ul>
+              <ul class="set-info__features">
+                <li class="set-info__features-item">Безопасен для ребенка</li>
+                <li class="set-info__features-item">Развивает интелект и моторику</li>
+                <li class="set-info__features-item">Немецкое качество</li>
+              </ul>
+            </div>
+            <div class="item__buttons">
+              <div class="item__price">60 000 руб.</div><a href="#order" class="btn btn--colored item__btn fancybox">Заказать</a>
+              <div class="item__logo"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="item-2" class="modal item">
+        <div class="modal__container">
+          <div class="item__top">
+            <h2 class="section-header section-header--black section-header--left">Макет «Мечта детства»</h2>
+            <div class="item__gallery"><a id="zoom1" href="/img/set-2.jpg" rel="adjustX: 0, adjustY: 0, zoomWidth: 340, zoomHeight: 340" class="item__gallery-main cloud-zoom"><img src="/img/set-2.jpg" alt="Railroad" class="item__gallery-main-picture"></a>
+              <div class="item__gallery-thumbnails-container"><a href="/img/set-1.jpg" rel="useZoom: 'zoom1', smallImage: 'img/set-1.jpg'" class="item__gallery-thumbnail item__gallery-thumbnail--active cloud-zoom-gallery"><img src="/img/item-1-small.jpg" alt="Railroad" align="left" class="item__gallery-thumbnail-picture"></a><a href="/img/set-2.jpg" rel="useZoom: 'zoom1', smallImage: 'img/set-2.jpg'" class="item__gallery-thumbnail cloud-zoom-gallery"><img src="/img/item-2-small.jpg" alt="Railroad" class="item__gallery-thumbnail-picture"></a><a href="/img/set-3.jpg" rel="useZoom: 'zoom1', smallImage: 'img/set-3.jpg'" class="item__gallery-thumbnail cloud-zoom-gallery"><img src="/img/item-3-small.jpg" alt="Railroad" class="item__gallery-thumbnail-picture"></a><a href="/img/set-4.jpg" rel="useZoom: 'zoom1', smallImage: 'img/set-4.jpg'" class="item__gallery-thumbnail cloud-zoom-gallery"><img src="/img/item-4-small.jpg" alt="Railroad" class="item__gallery-thumbnail-picture"></a></div>
+            </div>
+            <div class="item__dscr">Интересный железнодорожный путь пролегает черех холмистый пейзаж с множеством достопримечательностей: cредневековый город с церковью, гора с замком, ручей с озером, старая крипичная железнодорожная станция с товарным складом в тупике, тоннель и длинный изогнутый мост.</div>
+          </div>
+          <div class="item__bottom">
+            <div class="set-info set-info--modal">
+              <ul class="set-info__numbers">
+                <li class="set-info__numbers-item">
+                  <div class="set-info__numbers-item-header">Размер:</div>
+                  <div class="set-info__numbers-item-content">160x100x80</div>
+                </li>
+                <li class="set-info__numbers-item">
+                  <div class="set-info__numbers-item-header">Производство:</div>
+                  <div class="set-info__numbers-item-content">6-7 дней</div>
+                </li>
+                <li class="set-info__numbers-item">
+                  <div class="set-info__numbers-item-header">Срок службы:</div>
+                  <div class="set-info__numbers-item-content">10 лет</div>
+                </li>
+              </ul>
+              <ul class="set-info__features">
+                <li class="set-info__features-item">Безопасен для ребенка</li>
+                <li class="set-info__features-item">Развивает интелект и моторику</li>
+                <li class="set-info__features-item">Немецкое качество</li>
+              </ul>
+            </div>
+            <div class="item__buttons">
+              <div class="item__price">235 000 руб.</div><a href="#order" class="btn btn--colored item__btn fancybox">Заказать</a>
+              <div class="item__logo"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="item-3" class="modal item">
+        <div class="modal__container">
+          <div class="item__top">
+            <h2 class="section-header section-header--black section-header--left">Макет «Детский интеллект»</h2>
+            <div class="item__gallery"><a id="zoom1" href="/img/set-3.jpg" rel="adjustX: 0, adjustY: 0, zoomWidth: 340, zoomHeight: 340" class="item__gallery-main cloud-zoom"><img src="/img/set-3.jpg" alt="Railroad" class="item__gallery-main-picture"></a>
+              <div class="item__gallery-thumbnails-container"><a href="/img/set-1.jpg" rel="useZoom: 'zoom1', smallImage: 'img/set-1.jpg'" class="item__gallery-thumbnail item__gallery-thumbnail--active cloud-zoom-gallery"><img src="/img/item-1-small.jpg" alt="Railroad" align="left" class="item__gallery-thumbnail-picture"></a><a href="/img/set-2.jpg" rel="useZoom: 'zoom1', smallImage: 'img/set-2.jpg'" class="item__gallery-thumbnail cloud-zoom-gallery"><img src="/img/item-2-small.jpg" alt="Railroad" class="item__gallery-thumbnail-picture"></a><a href="/img/set-3.jpg" rel="useZoom: 'zoom1', smallImage: 'img/set-3.jpg'" class="item__gallery-thumbnail cloud-zoom-gallery"><img src="/img/item-3-small.jpg" alt="Railroad" class="item__gallery-thumbnail-picture"></a><a href="/img/set-4.jpg" rel="useZoom: 'zoom1', smallImage: 'img/set-4.jpg'" class="item__gallery-thumbnail cloud-zoom-gallery"><img src="/img/item-4-small.jpg" alt="Railroad" class="item__gallery-thumbnail-picture"></a></div>
+            </div>
+            <div class="item__dscr">Интересный железнодорожный путь пролегает черех холмистый пейзаж с множеством достопримечательностей: cредневековый город с церковью, гора с замком, ручей с озером, старая крипичная железнодорожная станция с товарным складом в тупике, тоннель и длинный изогнутый мост.</div>
+          </div>
+          <div class="item__bottom">
+            <div class="set-info set-info--modal">
+              <ul class="set-info__numbers">
+                <li class="set-info__numbers-item">
+                  <div class="set-info__numbers-item-header">Размер:</div>
+                  <div class="set-info__numbers-item-content">160x100x80</div>
+                </li>
+                <li class="set-info__numbers-item">
+                  <div class="set-info__numbers-item-header">Производство:</div>
+                  <div class="set-info__numbers-item-content">6-7 дней</div>
+                </li>
+                <li class="set-info__numbers-item">
+                  <div class="set-info__numbers-item-header">Срок службы:</div>
+                  <div class="set-info__numbers-item-content">10 лет</div>
+                </li>
+              </ul>
+              <ul class="set-info__features">
+                <li class="set-info__features-item">Безопасен для ребенка</li>
+                <li class="set-info__features-item">Развивает интелект и моторику</li>
+                <li class="set-info__features-item">Немецкое качество</li>
+              </ul>
+            </div>
+            <div class="item__buttons">
+              <div class="item__price">130 000 руб.</div><a href="#order" class="btn btn--colored item__btn fancybox">Заказать</a>
+              <div class="item__logo"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="item-4" class="modal item">
+        <div class="modal__container">
+          <div class="item__top">
+            <h2 class="section-header section-header--black section-header--left">Макет «Желанный»</h2>
+            <div class="item__gallery"><a id="zoom1" href="/img/set-4.jpg" rel="adjustX: 0, adjustY: 0, zoomWidth: 340, zoomHeight: 340" class="item__gallery-main cloud-zoom"><img src="/img/set-4.jpg" alt="Railroad" class="item__gallery-main-picture"></a>
+              <div class="item__gallery-thumbnails-container"><a href="/img/set-1.jpg" rel="useZoom: 'zoom1', smallImage: 'img/set-1.jpg'" class="item__gallery-thumbnail item__gallery-thumbnail--active cloud-zoom-gallery"><img src="/img/item-1-small.jpg" alt="Railroad" align="left" class="item__gallery-thumbnail-picture"></a><a href="/img/set-2.jpg" rel="useZoom: 'zoom1', smallImage: 'img/set-2.jpg'" class="item__gallery-thumbnail cloud-zoom-gallery"><img src="/img/item-2-small.jpg" alt="Railroad" class="item__gallery-thumbnail-picture"></a><a href="/img/set-3.jpg" rel="useZoom: 'zoom1', smallImage: 'img/set-3.jpg'" class="item__gallery-thumbnail cloud-zoom-gallery"><img src="/img/item-3-small.jpg" alt="Railroad" class="item__gallery-thumbnail-picture"></a><a href="/img/set-4.jpg" rel="useZoom: 'zoom1', smallImage: 'img/set-4.jpg'" class="item__gallery-thumbnail cloud-zoom-gallery"><img src="/img/item-4-small.jpg" alt="Railroad" class="item__gallery-thumbnail-picture"></a></div>
+            </div>
+            <div class="item__dscr">Интересный железнодорожный путь пролегает черех холмистый пейзаж с множеством достопримечательностей: cредневековый город с церковью, гора с замком, ручей с озером, старая крипичная железнодорожная станция с товарным складом в тупике, тоннель и длинный изогнутый мост.</div>
+          </div>
+          <div class="item__bottom">
+            <div class="set-info set-info--modal">
+              <ul class="set-info__numbers">
+                <li class="set-info__numbers-item">
+                  <div class="set-info__numbers-item-header">Размер:</div>
+                  <div class="set-info__numbers-item-content">160x100x80</div>
+                </li>
+                <li class="set-info__numbers-item">
+                  <div class="set-info__numbers-item-header">Производство:</div>
+                  <div class="set-info__numbers-item-content">6-7 дней</div>
+                </li>
+                <li class="set-info__numbers-item">
+                  <div class="set-info__numbers-item-header">Срок службы:</div>
+                  <div class="set-info__numbers-item-content">10 лет</div>
+                </li>
+              </ul>
+              <ul class="set-info__features">
+                <li class="set-info__features-item">Безопасен для ребенка</li>
+                <li class="set-info__features-item">Развивает интелект и моторику</li>
+                <li class="set-info__features-item">Немецкое качество</li>
+              </ul>
+            </div>
+            <div class="item__buttons">
+              <div class="item__price">235 000 руб.</div><a href="#order" class="btn btn--colored item__btn fancybox">Заказать</a>
+              <div class="item__logo"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="item-5" class="modal item">
+        <div class="modal__container">
+          <div class="item__top">
+            <h2 class="section-header section-header--black section-header--left">Макет «Босс»</h2>
+            <div class="item__gallery"><a id="zoom1" href="/img/set-5.jpg" rel="adjustX: 0, adjustY: 0, zoomWidth: 340, zoomHeight: 340" class="item__gallery-main cloud-zoom"><img src="/img/set-5.jpg" alt="Railroad" class="item__gallery-main-picture"></a>
+              <div class="item__gallery-thumbnails-container"><a href="/img/set-1.jpg" rel="useZoom: 'zoom1', smallImage: 'img/set-1.jpg'" class="item__gallery-thumbnail item__gallery-thumbnail--active cloud-zoom-gallery"><img src="/img/item-1-small.jpg" alt="Railroad" align="left" class="item__gallery-thumbnail-picture"></a><a href="/img/set-2.jpg" rel="useZoom: 'zoom1', smallImage: 'img/set-2.jpg'" class="item__gallery-thumbnail cloud-zoom-gallery"><img src="/img/item-2-small.jpg" alt="Railroad" class="item__gallery-thumbnail-picture"></a><a href="/img/set-3.jpg" rel="useZoom: 'zoom1', smallImage: 'img/set-3.jpg'" class="item__gallery-thumbnail cloud-zoom-gallery"><img src="/img/item-3-small.jpg" alt="Railroad" class="item__gallery-thumbnail-picture"></a><a href="/img/set-4.jpg" rel="useZoom: 'zoom1', smallImage: 'img/set-4.jpg'" class="item__gallery-thumbnail cloud-zoom-gallery"><img src="/img/item-4-small.jpg" alt="Railroad" class="item__gallery-thumbnail-picture"></a></div>
+            </div>
+            <div class="item__dscr">Интересный железнодорожный путь пролегает черех холмистый пейзаж с множеством достопримечательностей: cредневековый город с церковью, гора с замком, ручей с озером, старая крипичная железнодорожная станция с товарным складом в тупике, тоннель и длинный изогнутый мост.</div>
+          </div>
+          <div class="item__bottom">
+            <div class="set-info set-info--modal">
+              <ul class="set-info__numbers">
+                <li class="set-info__numbers-item">
+                  <div class="set-info__numbers-item-header">Размер:</div>
+                  <div class="set-info__numbers-item-content">160x100x80</div>
+                </li>
+                <li class="set-info__numbers-item">
+                  <div class="set-info__numbers-item-header">Производство:</div>
+                  <div class="set-info__numbers-item-content">6-7 дней</div>
+                </li>
+                <li class="set-info__numbers-item">
+                  <div class="set-info__numbers-item-header">Срок службы:</div>
+                  <div class="set-info__numbers-item-content">10 лет</div>
+                </li>
+              </ul>
+              <ul class="set-info__features">
+                <li class="set-info__features-item">Безопасен для ребенка</li>
+                <li class="set-info__features-item">Развивает интелект и моторику</li>
+                <li class="set-info__features-item">Немецкое качество</li>
+              </ul>
+            </div>
+            <div class="item__buttons">
+              <div class="item__price">235 000 руб.</div><a href="#order" class="btn btn--colored item__btn fancybox">Заказать</a>
+              <div class="item__logo"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="item-6" class="modal item">
+        <div class="modal__container">
+          <div class="item__top">
+            <h2 class="section-header section-header--black section-header--left">Макет «Счастливый»</h2>
+            <div class="item__gallery"><a id="zoom1" href="/img/set-6.jpg" rel="adjustX: 0, adjustY: 0, zoomWidth: 340, zoomHeight: 340" class="item__gallery-main cloud-zoom"><img src="/img/set-6.jpg" alt="Railroad" class="item__gallery-main-picture"></a>
+              <div class="item__gallery-thumbnails-container"><a href="/img/set-1.jpg" rel="useZoom: 'zoom1', smallImage: 'img/set-1.jpg'" class="item__gallery-thumbnail item__gallery-thumbnail--active cloud-zoom-gallery"><img src="/img/item-1-small.jpg" alt="Railroad" align="left" class="item__gallery-thumbnail-picture"></a><a href="/img/set-2.jpg" rel="useZoom: 'zoom1', smallImage: 'img/set-2.jpg'" class="item__gallery-thumbnail cloud-zoom-gallery"><img src="/img/item-2-small.jpg" alt="Railroad" class="item__gallery-thumbnail-picture"></a><a href="/img/set-3.jpg" rel="useZoom: 'zoom1', smallImage: 'img/set-3.jpg'" class="item__gallery-thumbnail cloud-zoom-gallery"><img src="/img/item-3-small.jpg" alt="Railroad" class="item__gallery-thumbnail-picture"></a><a href="/img/set-4.jpg" rel="useZoom: 'zoom1', smallImage: 'img/set-4.jpg'" class="item__gallery-thumbnail cloud-zoom-gallery"><img src="/img/item-4-small.jpg" alt="Railroad" class="item__gallery-thumbnail-picture"></a></div>
+            </div>
+            <div class="item__dscr">Интересный железнодорожный путь пролегает черех холмистый пейзаж с множеством достопримечательностей: cредневековый город с церковью, гора с замком, ручей с озером, старая крипичная железнодорожная станция с товарным складом в тупике, тоннель и длинный изогнутый мост.</div>
+          </div>
+          <div class="item__bottom">
+            <div class="set-info set-info--modal">
+              <ul class="set-info__numbers">
+                <li class="set-info__numbers-item">
+                  <div class="set-info__numbers-item-header">Размер:</div>
+                  <div class="set-info__numbers-item-content">160x100x80</div>
+                </li>
+                <li class="set-info__numbers-item">
+                  <div class="set-info__numbers-item-header">Производство:</div>
+                  <div class="set-info__numbers-item-content">6-7 дней</div>
+                </li>
+                <li class="set-info__numbers-item">
+                  <div class="set-info__numbers-item-header">Срок службы:</div>
+                  <div class="set-info__numbers-item-content">10 лет</div>
+                </li>
+              </ul>
+              <ul class="set-info__features">
+                <li class="set-info__features-item">Безопасен для ребенка</li>
+                <li class="set-info__features-item">Развивает интелект и моторику</li>
+                <li class="set-info__features-item">Немецкое качество</li>
+              </ul>
+            </div>
+            <div class="item__buttons">
+              <div class="item__price">235 000 руб.</div><a href="#order" class="btn btn--colored item__btn fancybox">Заказать</a>
+              <div class="item__logo"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div id="tibet" class="modal tibet">
+      <div class="modal__container">
+        <div class="tibet__top">
+          <h2 class="section-header section-header--black section-header--left">Тибетский взгляд на воспитание детей</h2>
+          <p class="tibet__annotation">Никаких унижений и телесных наказаний. Единственная причина, по которой бьют детей – они не могут дать сдачи.</p>
+          <ul class="tibet__periods-list">
+            <li class="tibet__period">
+              <h3 class="tibet__period-header">Первый период до 5 лет. </h3>
+              <p class="tibet__period-dscr">С ребенком нужно обращаться «как с царем». Запрещать ничего нельзя,  только отвлекать. Если он делает что-то опасное, то сделать испуганное лицо и издать испуганный возглас. Ребенок такой язык понимает прекрасно. В это время закладываются активность, любознательность, интерес к жизни. Ребенок еще неспособен выстраивать длинные логические цепочки. Например, он разбил дорогую вазу. Он не понимает, что для покупки такой вазы нужно много работать, заработать денег. Наказание он воспримет как подавление с позиции силы. Вы научите его не бить вазы, а подчиняться тому, кто сильнее. Оно Вам надо?</p>
+            </li>
+            <li class="tibet__period">
+              <h3 class="tibet__period-header">Второй период с 5 до 10 лет. </h3>
+              <p class="tibet__period-dscr">В это время с ребенком нужно обращаться «как с рабом». Ставить перед ним задачи и требовать их выполнения. Можно наказывать за невыполнение (но не физически). В это время активно развивается интеллект. Ребенок должен научиться прогнозировать реакцию людей на его поступки, вызывать положительное отношение к себе и избегать проявления отрицательного. В это время не бойтесь нагружать ребенка знаниями.</p>
+            </li>
+            <li class="tibet__period">
+              <h3 class="tibet__period-header">Третий период с 10 до 15 лет. </h3>
+              <p class="tibet__period-dscr">Как воспитывать ребенка в этот период? Как с ним обращаться? Как с равным. Не на равных, а именно «как с равным», так как Вы все равно имеете больше опыта и знаний. Советуйтесь с ним по всем важным вопросам, предоставляйте и поощряйте самостоятельность. Свою волю навязывайте в «бархатных перчатках» в процессе обсуждения, подсказками, советами. Если Вам что-то не нравится, то акцентируйте его внимание на негативных последствиях, избегая прямых запретов. В это время формируется самостоятельность и независимость мышления.</p>
+            </li>
+            <li class="tibet__period">
+              <h3 class="tibet__period-header">Последний период с 15 лет</h3>
+              <p class="tibet__period-dscr">Последний период с 15 лет. Относитесь к нему с уважением. Воспитывать ребенка уже поздно, и Вам остается только пожинать плоды своих трудов.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="tibet__consequences">
+          <h3 class="tibet__consequences-header">Какие же последствия может вызвать несоблюдение этих правил?</h3>
+          <p class="tibet__consequences-dscr">Если подавлять ребенка до 5 лет, то Вы подавите его жизненную активность, интерес к жизни, интеллект. Приучите его бездумно и привычно подчиняться грубой силе. Сделаете из него легкую жертву для всякого рода негодяев. <br> <br> Если Вы будете продолжать сюсюкать после 5, то ребенок вырастет инфантильным, неспособным к труду и вообще к духовным усилиям. <br><br>Если Вы будете опекать ребенка как маленького после 10, то он вырастет неуверенным, будет зависимым от более самостоятельных друзей, которые не всегда могут оказывать нужное влияние. <br><br>Если Вы не будете уважать ребенка после 15, то он Вам этого не простит и уйдет навсегда при первой возможности.</p>
+        </div>
+        <div class="tibet__bottom"><a href="#" class="btn btn--colored tibet__btn">Закрыть</a></div>
+      </div>
+    </div>
+    <div id="story" class="modal story">
+      <div class="modal__container">
+        <div class="story__top">
+          <h2 class="section-header section-header--black section-header--left">История о том, как образовалась <br> команда MR TUTU</h2>
+          <ul class="story__list">
+            <li class="story__item"> 
+              <div class="story__item-content">В детстве я ездил на поезде каждый год в Лениногорск, где живут мои бабушка с дедушкой. <br>Я обожал любоваться пейзажем из окна! Особый восторг вызывала возможность опустить окно плацкарта и полностыю высунуть голову из вагона. Помню, как в это время я жмурил глаза от встречного ветра и вдыхал приятный свежий воздух вперемешку с дымом идущим от печки пассажирского вагона.</div>
+            </li>
+            <li class="story__item"> 
+              <div class="story__item-content">В студенческие годы очень приятно было хотя бы на одну ночь очутиться в купе поезда Москва - Санкт-Петербург, чтобы пройтись по улицам Северной столицы. <br><br>Уже на последних курсах у меня появилась идея заняться тем, что мне нарвилось с детсва — связать свою жизнь с железнодорожным моделизмом.</div>
+            </li>
+            <li class="story__item"> 
+              <div class="story__item-content">Уже на последних курсах у меня появилась идея заняться тем, что мне нарвилось с детсва — связать свою жизнь с железнодорожным моделизмом.</div>
+            </li>
+            <li class="story__item"> 
+              <div class="story__item-content">В 2012 году я открыл интернет-магазин моделей железных дорог Kupitutu.ru</div>
+            </li>
+            <li class="story__item"> 
+              <div class="story__item-content">В начале 2013 года в магазин позвонил один клиент. Он хотел сделать особенный подарок для своего директора, который очень любит модели, паровозы и железнодорожную тематику. Его коллеги хотели заказать большую модель и предложили нам ее собрать,мы с радостью согласились! <br><br>Я всегда любил конструкторы, знал как пользоваться отверткой и паяльником, поэтому собрать первый железнодорожный макет было огромным удовольствием! Не менее приятно было слышать отзывы получателя макета,когда мы доставили готовое изделие. Он был в восторге!</div>
+            </li>
+            <li class="story__item"> 
+              <div class="story__item-content">С того самого «первого макета» я познакомился со многими очень интересными мастерами-моделистами. Спустя пару совместных проектов у нас образовалась слаженная команда (MR TUTU). Вместе мы изготавливаем железнодорожные макеты и по сей день. <br><br>Мы всегда стараемся сделать чуточку больше, чем от нас ждут.</div>
+            </li>
+          </ul>
+        </div>
+        <div class="story__outcome">Видишь радость в глазах детей и взрослых, когда доставляешь железнодорожный макет. Чувствуешь, что вложился  по-максимуму.</div>
+        <div class="story__bottom"><a href="#" class="btn btn--colored story__btn">Закрыть</a></div>
+      </div>
+    </div>
+    <div id="order" class="modal modal-form modal-form--order"><a href="#modal-success" class="modal-form__hidden-link fancybox"></a>
+      <form action="mail.php" method="POST" class="modal-form__content">
+        <div class="modal-form__top">
+          <h2 class="section-header section-header--black section-header--center">Оформление заказа</h2>
+          <div class="modal-form__comment">Для оформления заказа, заполните поля ниже</div>
+          <div class="modal-form__item">
+            <p class="modal-form__item-header">Как вас зовут:</p>
+            <input type="text" name="name" required class="input">
+          </div>
+          <div class="modal-form__item">
+            <p class="modal-form__item-header">Телефон:</p>
+            <input type="text" name="phone" required class="input">
+          </div>
+        </div>
+        <div class="modal-form__bottom">
+          <button class="btn btn--colored order__btn">Отправить</button>
+        </div>
+      </form>
+    </div>
+    <div id="testdrive" class="modal modal-form modal-form--testdrive"><a href="#modal-success" class="modal-form__hidden-link fancybox"></a>
+      <form action="mail.php" method="POST" class="modal-form__content">
+        <div class="modal-form__top">
+          <h2 class="section-header section-header--black section-header--center">Запись на тестдрайв</h2>
+          <div class="modal-form__comment">Для записи на тестдрайв, заполните поля ниже</div>
+          <div class="modal-form__item">
+            <p class="modal-form__item-header">Как вас зовут:</p>
+            <input type="text" name="name" required class="input">
+          </div>
+          <div class="modal-form__item">
+            <p class="modal-form__item-header">Телефон:</p>
+            <input type="text" name="phone" required class="input">
+          </div>
+        </div>
+        <div class="modal-form__bottom">
+          <button class="btn btn--colored order__btn">Отправить</button>
+        </div>
+      </form>
+    </div>
+    <div id="advice" class="modal modal-form modal-form--advice"><a href="#modal-success" class="modal-form__hidden-link fancybox"></a>
+      <form action="mail.php" method="POST" class="modal-form__content">
+        <div class="modal-form__top">
+          <h2 class="section-header section-header--black section-header--center">Получить консультацию</h2>
+          <div class="modal-form__comment">Для получения консультации, заполните поля ниже</div>
+          <div class="modal-form__item">
+            <p class="modal-form__item-header">Как вас зовут:</p>
+            <input type="text" name="name" required class="input">
+          </div>
+          <div class="modal-form__item">
+            <p class="modal-form__item-header">Телефон:</p>
+            <input type="text" name="phone" required class="input">
+          </div>
+        </div>
+        <div class="modal-form__bottom">
+          <button class="btn btn--colored order__btn">Отправить</button>
+        </div>
+      </form>
+    </div>
+    <div id="modal-success" class="modal modal-form">
+      <div class="modal-form__form">
+        <div class="modal-form__top">
+          <h2 class="section-header section-header--black section-header--center">Спасибо!</h2>
+          <div class="modal-form__comment">Наши менеджеры свяжутся с вами в самое ближайшее время!</div>
+        </div>
+      </div>
+    </div>
+    <div id="subscribe-success" class="modal modal-form">
+      <div class="modal-form__form">
+        <div class="modal-form__top">
+          <h2 class="section-header section-header--black section-header--center">Вы подписались на рассылку</h2>
+          <div class="modal-form__comment">
+             
+            Ваша почта <a href="#" class="modal-form__comment-link">mumijo@yandex.ru</a>&nbsp;добавлена в нашу базу для рассылок
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="portfolio" class="portfolio">
+      <div class="portfolio__close"></div>
+      <h2 class="portfolio__header">Портфолио</h2>
+      <div class="portfolio__slider"><img src="img/portfolio-1.jpg" alt="Portfolio" class="portfolio__slider-item"><img src="img/portfolio-1.jpg" alt="Portfolio" class="portfolio__slider-item"><img src="img/portfolio-1.jpg" alt="Portfolio" class="portfolio__slider-item"><img src="img/portfolio-1.jpg" alt="Portfolio" class="portfolio__slider-item"><img src="img/portfolio-1.jpg" alt="Portfolio" class="portfolio__slider-item"></div>
+    </div>
+  </body>
+</html>
