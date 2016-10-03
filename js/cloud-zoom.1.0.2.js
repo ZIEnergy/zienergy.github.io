@@ -339,7 +339,7 @@
             if ($(this).is('.cloud-zoom')) {
                 $(this).css({
                     'position': 'relative',
-                    'display': 'flex'
+                    'display': 'block'
                 });
                 $('img', $(this)).css({
                     'display': 'block'
